@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# Welcome to Virtual Reality for the Web
 
-You can use the [editor on GitHub](https://github.com/jgwinner/ReactVRBook/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository has the source, graphics, and models for examples from the book "Virtual Reality for the Web" by Packt publishing. This book is currently being edited. I have created this repository to store the files used in examples and exercises, and to allow technical editors and my self may any corretions to the files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Chapters in the book
 
-### Markdown
+1. What is Virtual Reality-really?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+2. Flatland and beyond - VR Programming
 
-```markdown
-Syntax highlighted code block
+3.D or – reality in dimensions other than X and Y
 
-# Header 1
-## Header 2
-### Header 3
+4. The React VR Library
 
-- Bulleted
-- List
+5. Your first VR App
+  - Space Gallery
+  - Background (Pano) and model files
+  - Teapot
+  - Final world with background, pedestals, and the teapot
 
-1. Numbered
-2. List
+6: Working with Poly and the Gon family
 
-**Bold** and _Italic_ and `Code` text
+  - The tile texture
+  - Teapot, flat and smooth shaded
+  - Teapot with tiles
+  - Better floor tiles
 
-[Link](url) and ![Image](src)
-```
+7. Breath life in your world
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  - Boiling sound files
+  - World with boiling teapot
 
-### Jekyll Themes
+8: Do it Yourself – native modules and three.js
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jgwinner/ReactVRBook/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  - Button click sounds
+  - Bouncing cube 
 
-### Support or Contact
+9. Bringing in the real live world
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+10. Take a walk on the Wild Side
+
+11. Publishing your App
+
+12. What’s next – Monetizing VR
+
+
