@@ -50,21 +50,22 @@ In most cases, these files are sucessive changes to 'index.vr.js' However, I wil
 
 I thought about making a whole new branch (confusing to some), a whole new director (can take minutes to create all of the React/ReactVR supporting files), and decided the rename was the easiest way to do it. I'm open to suggestions on better ways!
 
-# Countdown to using the files
+# How to use the files
 
 Either:
- 2. Read my book
+
+ 1. Read my book to find out
 
 OR:
 
- 4. Download Node.js
- 3. Use npm to install ReactVR
- 2. Initialize a new directory
+ 1. Download Node.js
+ 2. Use npm to install ReactVR
+ 3. Initialize a new directory
  
 Then: (either case)
 
- 1. Replace the index.vr.js files with the appropriate index_cool_feature.vr.js and client.js (located in the VR folder)
- 0. Put any model files, etc. in the static_assets folder.
+ 4. Replace the index.vr.js files with the appropriate index_cool_feature.vr.js and client.js (located in the VR folder)
+ 5. Put any model files, etc. in the static_assets folder.
  
  Note that for a large website, you may want to split up the static_assets folder and reorganize your source; these examples have been left artificially simple so as not to clutter up the examples.
  
