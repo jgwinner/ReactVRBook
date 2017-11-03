@@ -70,12 +70,12 @@ function maze(x, y, seed) {
             if (0 == j % 2)
                 for (var k = 0; k < m.y * 2 + 1; k++)
                     if (0 == k % 2)
-                        line[k] = 'x';
+                        line[k] = 'c';
                     else
                         if (j > 0 && m.verti[j / 2 - 1][Math.floor(k / 2)])
                             line[k] = ' ';
                         else
-                            line[k] = 'x';
+                            line[k] = 'w';
             else
                 for (var k = 0; k < m.y * 2 + 1; k++)
                     if (0 == k % 2)
