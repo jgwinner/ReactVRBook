@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
 
 import {
-    asset,
-    Box,
-    Model,
-    Text,
-    View
+  asset,
+  Box,
+  Model,
 } from 'react-vr';
 
 
 export default class Hedge extends Component {
 
-    render() {
-        return (
-            <Model
-                source={{
-                    gltf2: asset('Long\\LongAlpha3.gltf'),
-                }}
-                style={{
-                    transform: [
-                        { translate: [this.props.X, -4, this.props.Z] },
-                        { scale: [1, 1, 1] }
-                    ]
-                }}
-            />
-        );
-    }
+  render() {
+    return (
+      <Model
+        lit
+          source={{
+          obj: asset('MazeHedgeLowPoly_4.obj'),
+          mtl: asset('MazeHedgeLowPoly_4.mtl')
+          }}
+        style={{
+          transform: [
+            { translate: [this.props.X, -4, this.props.Z] },
+            { rotateY: this.props.randRot },
+            { scale: [1 * this.props.randScale, 1 * this.props.randScale, 1 * this.props.randScale] }
+          ]
+        }
+        }
+      />
+    );
+  }
 }

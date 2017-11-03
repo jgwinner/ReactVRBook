@@ -1,36 +1,27 @@
 import React, { Component } from 'react';
 
 import {
-    asset,
-    Box,
-    Model,
-    Text,
-    View
+  asset,
+  Box,
+  Model,
 } from 'react-vr';
 
-// This is our teleport UI; you stare at it, and then you'll be moved to here.
+// This a floor for our maze. Optional, but then it can look lie
+// you are floating over the background <pano>
 
 export default class Floor extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            Height: -5
-        };
-
-    }
-
-
-    render() {
-        return (
-            <Model
-                source={{
-                    gltf2: asset('MazeFloor.gltf'),
-                }}
-                style={{
-                    transform: [{ translate: [this.props.X, -4, this.props.Z] }]
-                }}
-            />
-        );
-    }
+  render() {
+    return (
+      <Model
+        source={{
+          obj: asset('MazeFloorHollow.obj'),
+          mtl: asset('MazeFloorHollow.mtl'),
+        }}
+        style={{
+          transform: [{ translate: [this.props.X, -4, this.props.Z] }]
+        }}
+      />
+    );
+  }
 }
