@@ -19,6 +19,7 @@ function init(bundle, parent, options) {
   var renderFrame;
   var torus;
   var texture;
+  var cube;
 
   const vr = new VRInstance(bundle, 'GoingNative', parent, {
     // Add custom options here
@@ -52,7 +53,7 @@ function init(bundle, parent, options) {
   torus.position.x = 1;
   scene.add(torus);
 
-  const cube = new THREE.Mesh( new THREE.BoxGeometry(1, 1, 1), materialCube);
+  cube = new THREE.Mesh( new THREE.BoxGeometry(1, 1, 1), materialCube);
   cube.position.z = -4;
   scene.add(cube);
 
