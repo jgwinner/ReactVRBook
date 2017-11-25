@@ -19,28 +19,35 @@ const cubeModule = NativeModules.CubeModule;
 class GoingNative extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { btnColor: 'white', cubeColor: 'yellow' };
-    cubeModule.changeCubeColor(this.state.cubeColor);
+    this.state = { btnColor: 'gray', cubeColor: 'yellow' };
+    //cubeModule.changeCubeColor(this.state.cubeColor);
   }
 
   render() {
     return (
-      <View
-        style={{
-          transform: [{ translate: [0, 0, -3] }],
-          layoutOrigin: [0.5, 0, 0],
-          alignItems: 'center',
-        }}>
+      <View>
         <Pano source={asset('chess-world.jpg')} />
+        <AmbientLight
+          intensity={.3}
+        />
+        <DirectionalLight
+          intensity={.7}
+          style={{
+            transform: [{
+              rotateZ: 45
+            }]
+          }}
+        />
 
         <VrButton
           style={{
             backgroundColor: this.state.btnColor,
             borderRadius: 0.05,
             margin: 0.05,
+            transform: [{ translate: [0, 0, -3] }],
           }}
           onEnter={() => { this.setState({ btnColor: this.state.cubeColor }) }}
-          onExit={() => { this.setState({ btnColor: 'white' }) }}
+          onExit={() => { this.setState({ btnColor: 'gray' }) }}
           onClick={() => {
             let hexColor = Math.floor(Math.random() * 0xffffff).toString(16);
             // Ensure we always have 6 digits by padding with leading zeros.
