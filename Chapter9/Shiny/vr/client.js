@@ -84,10 +84,9 @@ function init(bundle, parent, options) {
     cubeCamera.position.copy(cube.position);
     cubeCamera.update(vr.player.renderer, scene);
     materialCube.envMap = cubeCamera.renderTarget.texture;
-    renderFrame++;
-
     cube.visible = true;
-    torus.visible = true;
+
+    renderFrame++;
 
   };
   // Begin the animation loop
