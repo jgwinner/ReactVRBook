@@ -20,22 +20,19 @@ const styles = StyleSheet.create({
   }
 })
 
-
-
 export default class WalkInAMaze extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       cellSpacing: 2.1,
-      sizeX: 5,
-      sizeZ: 5,
+      sizeX: 4,
+      sizeZ: 4,
       startX: 0,
       startZ: 0,
-      seed: 42
+      seed: 7
     }
     this.handleClickGem = this.handleClickGem.bind(this);
-    this.onClickFloor = this.onClickFloor.bind(this);
     this.MazeStartX = this.MazeStartX.bind(this);
     this.MazeStartZ = this.MazeStartZ.bind(this);
 
@@ -48,25 +45,11 @@ export default class WalkInAMaze extends React.Component {
   componentWillMount() {
     this.setState({ startX: this.MazeStartX(0) });
     this.setState({ startZ: this.MazeStartZ(0) });
-
-  }
-  componentDidMount() {
-    //var mycallback = function (X, Z) { onClickFloor(X, Z); };
-    //EventBus.on("floorClicked ", mycallback);
-
-  }
-
-  onClickFloor(X, Z) {
-    console.log("Main routine got an event based click:" + x + " " + z);
-    //it seems weird, going the 'other' direction from the gem's location
-    //but this is because the view is through the camera. 
-    this.setState({ startX: -X, startZ: -Z });
   }
 
   handleClickGem(X, Z) {
-    //console.log("Main routine got a click:" + X + " " + Z);
-    //this.setState({ startX: X, startZ: X });
-    console.log("Main routine recieved a click:" + X + "x" + Z + " From:" + this.state.startX + "x" + this.state.startZ);
+    const time = new Date();
+    console.log("Main routine recieved a click:" + X + "x" + Z + " From:" + this.state.startX + "x" + this.state.startZ + ' at ' + time.toLocaleTimeString());
     this.setState({ startX: -X, startZ: -Z });
   };
 

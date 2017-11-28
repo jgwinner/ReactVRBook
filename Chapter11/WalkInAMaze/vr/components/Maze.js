@@ -28,7 +28,7 @@ export default class Maze extends Component {
   }
 
   handleClickGem(X, Z) {
-    console.log('Maze recieved a click:' + X + 'x' + Z);
+    //console.log('Maze recieved a click:' + X + 'x' + Z);
     // just pass it to the parent.
     // onClickGem is a prop passed by the parent
     this.props.onClickGem(X, Z);
@@ -136,18 +136,17 @@ export default class Maze extends Component {
 
       if (this.props.sizeX * 2 - 1 === j) line[2 * this.props.sizeZ] = '2';
 
-      //var linestring = '';
+      var linestring = '';
 
       for (var i = 0; i < this.props.sizeX * 2 + 1; i++) {
+        //uncomment this next line if you want the console to show
+        //what maze you actually generate
         //linestring += line[i];
         let x = this.props.cellSpacing * i;
         let z = row * this.props.cellSpacing;
         var cellLoc = { X: x, Z: z, randRot: 0, randScale: 1 };
 
-        //jdg: There is a weird bug with adding the floors; 
-        //you may get multiple clicks. I have commented out this code
-        //until we can track down what is happening.
-        // mazeHedges.push(<Floor {...cellLoc} />);
+        mazeHedges.push(<Floor {...cellLoc} />);
 
         if (line[i] == 'x') {
           mazeHedges.push(<Hedge {...cellLoc}
