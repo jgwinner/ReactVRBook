@@ -41,11 +41,12 @@ export default class Gem extends Component {
 
           <Model
             source={{
-              gltf2: asset('TeleportGem.gltf'),
+              gltf2: asset('TeleportGem.gltf')
             }}
             style={{
               transform: [{ translate: [this.props.X, buttonIsClicked ? this.state.Height - 2.5 : this.state.Height, this.props.Z] }]
             }}
+            lit
           />
         )}
       </GazeButton>
