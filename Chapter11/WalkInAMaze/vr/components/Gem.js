@@ -23,7 +23,7 @@ export default class Gem extends Component {
   onGemClicked() {
     this.setState({ buttonIsClicked: true });
     const time = new Date();
-    console.log('Gem recieved a click' + this.props.X + ' x ' + this.props.Z + ' at ' + time.toLocaleTimeString());
+    console.log('Gem recieved a click at ' + this.props.X + ' x ' + this.props.Z + ' at ' + time.toLocaleTimeString());
     //send it to the parent
     this.props.onClickGem(this.props.X, this.props.Z);
 

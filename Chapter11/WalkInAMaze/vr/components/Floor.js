@@ -15,8 +15,9 @@ export default class Floor extends Component {
     return (
       <Model
         source={{
+          // gltf2: asset('MazeFloorHollow.gltf')
           obj: asset('MazeFloorHollow.obj'),
-          mtl: asset('MazeFloorHollow.mtl'),
+          mtl: asset('MazeFloorHollow.mtl')
         }}
         style={{
           transform: [{ translate: [this.props.X, -4, this.props.Z] }]
