@@ -9,9 +9,15 @@ To fix this, download the source files, including package.json, and then open th
 
 Hopefully, either react-vr or three-gltf-loader will fix the problem; if so, I'll update this repository and remove the package.json.
 
+The fix for your own files is to edit your package.json to add the following:
+
+```"three-gltf2-loader": "=1.1.0 || > 1.2.1"```
+
+This tells npm or your package manager that you need exactly version 1.1.0 of three-gltf2-loader OR anything above version 1.2.1. Currently version 1.2.0 has the bug; version 1.1.0 works fine. 
+
 ## BUG in the book
 
-Please do an:
+I forgot to specify this in the book, so if you don't download package.json, then please do an:
 
 ```npm install simple-raycaster```
 
