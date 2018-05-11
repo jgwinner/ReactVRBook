@@ -1,4 +1,8 @@
-# Welcome to Getting Started with React VR
+# Welcome to Getting Started with React 360
+
+Yes, the name of the product has been changed from React VR to React 360.
+
+If there are any changes in the samples, I will update the code here; things will be more up to date on GitHub than on the .zip from Packt.
 
 This repository has the source, graphics, and models for examples from the book "Getting Started with React VR" by Packt publishing. I have created this repository to store the files used in examples and exercises, and to allow technical editors and myself to make any corretions to the files.
 
