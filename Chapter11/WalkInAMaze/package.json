@@ -18,7 +18,7 @@
     "react-vr-gaze-button": "^0.1.4",
     "react-vr-web": "^2.0.0",
     "simple-raycaster": "^1.0.1",
-    "three": "^0.87.1"
+    "three": "^0.87.1",
     "three-gltf2-loader": "=1.1.0 || > 1.2.1"
 
   },
